@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #ba2626;
+}
+.wrapper{
+  width: 450px;
+  background: #fff;
+  border-radius: 10px;
+}
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+.calendar ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
