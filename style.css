@@ -14,7 +14,7 @@ body{
   padding: 0 10px;
   justify-content: center;
   min-height: 100vh;
-  background: #ba2626;
+  background-image: linear-gradient(to left bottom, #82c6a4, #4db8b1);
 }
 .wrapper{
   width: 450px;
@@ -81,20 +81,21 @@ header .icons span:last-child{
   color: #aaa;
 }
 .days li.active{
-  color: #fff;
+  color: black;
 }
-.day li::before{
+.days li::before{
   position: absolute;
   content: "";
   height: 40px;
   width: 40px;
   top: 50%;
   left: 50%;
+  z-index: -1;
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
 .days li.active::before{
-  background: #ba2626;
+  background: #82c6a4;
 }
 .days li:not(.active):hover::before{
   background: #f2f2f2;
